@@ -1,0 +1,103 @@
+<!-- 变量的命名，let或var -->
+let myVariable='Alf'
+
+<!-- 通过变量名，获取变量值 -->
+myVariable;
+
+
+<!-- 变量在赋值有可以更改 -->
+let myVariable='Salary'
+myArticle ='Alf'
+
+
+<!-- 变量可以有不同的数据类型 -->
+    <!-- String -->
+    let myVariable='Alf'
+    <!-- Number -->
+    let MyVariable=10;
+    <!-- Boolean -->
+    let myVariable=true;
+    <!-- Array -->
+    let myVariable=[1,'Alf','Bob','10']
+    <!-- Object -->
+    let myVariable=document.querySelector('h1');
+
+<!-- 注释 略 -->
+
+<!-- 运算符 -->
+    <!-- 加 -->
+    6+9;
+    "hello" + "world";
+    <!-- 减、乘、除 -->
+    9-3;
+    8*2;
+    9/3;
+    <!-- 赋值运算符 -->
+    let myVariable=3;
+    myVariable === 4; //测试两个值是否相等
+    <!-- 不等于 -->
+    let myVariable=3;
+    myVariable !=3; //false
+    <!-- 取非，原式为真，经取非后值为false -->
+    let myVariable =3;
+    !(myArticle === 3);//false
+
+    <!-- 运算符种类远不止这些，完整列表参阅：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators -->
+
+
+
+
+
+<!-- 条件语句 if... else -->
+    let iceCream = 'chocolate';
+    if(iceCream === 'chocolate'){
+        alert('我最喜欢巧克力冰淇淋了。');
+    }else{
+        alert('但是巧克力才是我的最爱啊······');
+    }
+
+
+
+<!-- 函数，Function 
+
+    用来封装可复用的功能。 
+-->
+    let myVariable = document.querySelector('h1');
+
+    alert('hello!');
+
+    <!-- document.querySelector 和alert是浏览器的内置函数 -->
+
+    
+
+
+    <!-- 两个参数进行乘法运算的函数 -->
+    function multiply(num1,num2){
+        let result = num1 * num2;
+        return result;
+    }
+
+    //尝试在控制台打印，
+    multiply(4.7);
+    multiply(20,20);
+    multiply(0.5,3);
+
+    <!-- 参数的作用域：from
+        https://developer.mozilla.org/zh-CN/docs/Glossary/Scope
+        变量的作用域：from
+        https://developer.mozilla.org/zh-CN/docs/web/javascript/guide/grammar_and_types#Variable_scope -->
+
+
+
+<!-- 事件
+    能为网页添加真实的交互能力。可以捕捉浏览器操作并允许一些代码作为响应。最简单的事件是 点击事件：鼠标点击操作会触发该事件。
+
+-->
+    document.querySelector('html').onclick = function(){
+        alert('别戳我，我怕疼。');
+    }
+
+    //将事件元素绑定有许多方法。这里使用了 <html>元素，把一个匿名函数（就是没有命名的函数，这里的匿名函数包含
+    //单机鼠标时要运行的代码)赋值给了html的 onclick 属性 。onclick属性,from : https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
+
+
